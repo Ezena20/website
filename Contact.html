@@ -1,6 +1,18 @@
 <html>
  <head>
      <link rel="stylesheet" type="text/css" href="fontpage.css">
+     <script>
+        function validate(){
+            var x =
+            document.forms["Form"]
+            ["fName"].value;
+            if(x==""){
+                alert("comment must bre filled");
+                return false;
+            }
+        }
+
+</script>
  </head>
  <body>
  <div class="head">
@@ -26,6 +38,14 @@
         Dar es salaam,Tanzania.
 
     </p>
+
+      <form name="Form" action="/action_page.php"
+      onsubmit="return
+      validateForm()" method="post">
+      Comment:<input type="text"
+      comment="ftext">
+      <input type="submit" value="Submit">
+      </form>
 
     <div class="what">
         Phone:167788889,<br>
